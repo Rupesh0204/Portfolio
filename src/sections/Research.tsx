@@ -95,12 +95,12 @@ const Research: React.FC = () => {
         >
           <div className="flex items-center justify-center gap-4 mb-6">
             <h2 className="text-4xl font-bold text-gray-800">Research Publications</h2>
-            <button
+            {/* <button
               onClick={() => setShowAddForm(true)}
               className="p-2 bg-blue-100 text-blue-600 rounded-full hover:bg-blue-200 transition-colors"
             >
               <Plus size={24} />
-            </button>
+            </button> */}
           </div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             My contributions to the academic community through research papers and publications in various fields of computer science and technology.
@@ -161,18 +161,18 @@ const Research: React.FC = () => {
               className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent mb-4"
             />
             <div className="flex gap-3">
-              <button
+              {/* <button
                 onClick={addPaper}
                 className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
               >
                 Add Paper
-              </button>
-              <button
+              </button> */}
+              {/* <button
                 onClick={() => setShowAddForm(false)}
                 className="px-4 py-2 bg-gray-300 text-gray-700 rounded-lg hover:bg-gray-400 transition-colors"
               >
                 Cancel
-              </button>
+              </button> */}
             </div>
           </motion.div>
         )}
@@ -186,12 +186,12 @@ const Research: React.FC = () => {
               viewport={{ once: true }}
               className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 group relative"
             >
-              <button
+              {/* <button
                 onClick={() => removePaper(paper.id)}
                 className="absolute top-4 right-4 z-10 p-2 bg-red-100 text-red-600 rounded-full hover:bg-red-200 transition-colors opacity-0 group-hover:opacity-100"
               >
                 <Trash2 size={16} />
-              </button>
+              </button> */}
               
               <div className="p-6">
                 <div className="flex items-start justify-between mb-4">

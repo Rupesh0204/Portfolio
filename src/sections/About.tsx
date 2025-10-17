@@ -192,12 +192,12 @@ const About: React.FC = () => {
                 <GraduationCap className="mr-3 text-blue-600" size={28} />
                 Education
               </h3>
-              <button
+              {/* <button
                 onClick={() => setShowEducationForm(true)}
                 className="p-2 bg-blue-100 text-blue-600 rounded-full hover:bg-blue-200 transition-colors"
               >
                 <Plus size={20} />
-              </button>
+              </button> */}
             </div>
 
             <div className="space-y-6">
@@ -209,12 +209,12 @@ const About: React.FC = () => {
                   transition={{ duration: 0.5 }}
                   className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-lg shadow-lg border-l-4 border-blue-500 group hover:shadow-xl transition-shadow relative"
                 >
-                  <button
+                  {/* <button
                     onClick={() => removeEducation(item.id)}
                     className="absolute top-4 right-4 p-1 text-gray-400 hover:text-red-500 opacity-0 group-hover:opacity-100 transition-opacity"
                   >
                     <X size={16} />
-                  </button>
+                  </button> */}
                   <h4 className="text-xl font-semibold text-gray-800 mb-2">
                     {item.title}
                   </h4>
@@ -250,12 +250,12 @@ const About: React.FC = () => {
                 <Briefcase className="mr-3 text-purple-600" size={28} />
                 Experience
               </h3>
-              <button
+              {/* <button
                 onClick={() => setShowInternshipForm(true)}
                 className="p-2 bg-purple-100 text-purple-600 rounded-full hover:bg-purple-200 transition-colors"
               >
                 <Plus size={20} />
-              </button>
+              </button> */}
             </div>
 
             <div className="space-y-6">
@@ -267,12 +267,12 @@ const About: React.FC = () => {
                   transition={{ duration: 0.5 }}
                   className="bg-gradient-to-br from-purple-50 to-pink-50 p-6 rounded-lg shadow-lg border-l-4 border-purple-500 group hover:shadow-xl transition-shadow relative"
                 >
-                  <button
+                  {/* <button
                     onClick={() => removeInternship(item.id)}
                     className="absolute top-4 right-4 p-1 text-gray-400 hover:text-red-500 opacity-0 group-hover:opacity-100 transition-opacity"
                   >
                     <X size={16} />
-                  </button>
+                  </button> */}
                   <h4 className="text-xl font-semibold text-gray-800 mb-2">
                     {item.title}
                   </h4>

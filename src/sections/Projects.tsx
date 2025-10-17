@@ -23,23 +23,23 @@ const Projects: React.FC = () => {
       summary: "Built a secure e-commerce platform with payment integration, OTP authentication, real-time delivery tracking, and a seller dashboard, delivered on time, earning client trust and referrals.",
       skills: ["React", "Node.js", "MongoDB", "Stripe", "TailwindCSS", "MERN stack"],
       githubUrl: "https://github.com/Rupesh0204/E-commerce-Website.git",
-      image: "/public/imge-com.png",
+      image: "/imge-com.png",
       screenshots: [
-        "/public/img1.png",
-         "/public/img2.png",
-        "/public/img3.png",
-         "/public/img4.png",
-          "/public/img5.png",
-           "/public/img6.png",
-            "/public/img7.png",
-             "/public/img7.1.png",
-              "/public/img8.png",
-               "/public/img9.png",
-                "/public/img10.png",
-                 "/public/img11.png",
-                  "/public/img12.png",
-                   "/public/img13.png",
-                    "/public/img14.png",
+        "/img1.png",
+         "/img2.png",
+        "/img3.png",
+         "/img4.png",
+          "/img5.png",
+           "/img6.png",
+            "/img7.png",
+             "/img7.1.png",
+              "/img8.png",
+               "/img9.png",
+                "/img10.png",
+                 "/img11.png",
+                  "/img12.png",
+                   "/img13.png",
+                    "/img14.png",
       ],
       //liveUrl: "https://your-ecommerce-demo.com"
     },
@@ -49,24 +49,24 @@ const Projects: React.FC = () => {
       summary: "Led a 4-member team to build a high-complexity mobile app for real-time tracking, file sharing, and collaboration, improving project management, used by college staff, and winning two inter-college innovation awards.",
       skills: ["Android", "Firebase", "Material-UI", " Kotlin"],
       githubUrl: "https://github.com/Rupesh0204/Opacity-Social.git",
-      image: "/public/img-opa.png",
+      image: "/img-opa.png",
       screenshots: [
-        "/public/img100.png",
-        "/public/img101.png",
-         "/public/img102.png",
-        "/public/img103.png",
-         "/public/img104.png",
-          "/public/img105.png",
-           "/public/img106.png",
-            "/public/img107.png",
-             "/public/img108.png",
-               "/public/img109.png",
-                "/public/img110.png",
-                 "/public/img111.png",
-                  "/public/img112.png",
-                   "/public/img113.png",
-                    "/public/img114.png",
-                    "/public/img115.png","/public/img116.png","/public/img117.png","/public/img118.png",
+        "/img100.png",
+        "/img101.png",
+         "/img102.png",
+        "/img103.png",
+         "/img104.png",
+          "/img105.png",
+           "/img106.png",
+            "/img107.png",
+             "/img108.png",
+               "/img109.png",
+                "/img110.png",
+                 "/img111.png",
+                  "/img112.png",
+                   "/img113.png",
+                    "/img114.png",
+                    "/img115.png","/img116.png","/img117.png","/img118.png",
       ],
     },
     {
@@ -77,17 +77,17 @@ const Projects: React.FC = () => {
       githubUrl: "https://github.com/Rupesh0204/AI-Bot.git",
       image: "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg",
       screenshots: [
-      "/public/img200.png",
-      "/public/img201.png",
-        "/public/img202.png",
-        "/public/img203.png",
-         "/public/img204.png",
-          "/public/img205.png",
-           "/public/img206.png",
-            "/public/img207.png",
-              "/public/img208.png",
-               "/public/img209.png",
-                "/public/img210.png",
+      "/img200.png",
+      "/img201.png",
+        "/img202.png",
+        "/img203.png",
+         "/img204.png",
+          "/img205.png",
+           "/img206.png",
+            "/img207.png",
+              "/img208.png",
+               "/img209.png",
+                "/img210.png",
       ],
       //liveUrl: "https://your-weather-demo.com"
     }
@@ -175,12 +175,12 @@ const Projects: React.FC = () => {
         >
           <div className="flex items-center justify-center gap-4 mb-6">
             <h2 className="text-4xl font-bold text-gray-800">Featured Projects</h2>
-            <button
+            {/* <button
               onClick={() => setShowAddForm(true)}
               className="p-2 bg-blue-100 text-blue-600 rounded-full hover:bg-blue-200 transition-colors"
             >
               <Plus size={24} />
-            </button>
+            </button> */}
           </div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Here are some of my recent projects that showcase my skills and passion for creating innovative solutions.
@@ -275,13 +275,13 @@ const Projects: React.FC = () => {
               viewport={{ once: true }}
               className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 group relative"
             >
-              <button
+              {/* <button
                 onClick={() => removeProject(project.id)}
                 className="absolute top-4 right-4 z-10 p-2 bg-red-100 text-red-600 rounded-full hover:bg-red-200 transition-colors opacity-0 group-hover:opacity-100"
               >
                 <Trash2 size={16} />
               </button>
-              
+               */}
               <div className="relative overflow-hidden">
                 <img
                   src={project.image}

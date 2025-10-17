@@ -82,12 +82,12 @@ const Skills: React.FC = () => {
       viewport={{ once: true }}
       className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 group relative"
     >
-      <button
+      {/* <button
         onClick={() => onRemove(skill.name)}
         className="absolute top-2 right-2 p-1 bg-red-100 text-red-600 rounded-full hover:bg-red-200 transition-colors opacity-0 group-hover:opacity-100"
       >
         <Trash2 size={14} />
-      </button>
+      </button> */}
       <div className="w-24 h-24 mx-auto mb-4">
         <CircularProgressbar
           value={skill.percentage}
@@ -117,12 +117,12 @@ const Skills: React.FC = () => {
         <div className="text-4xl mb-4">{icon}</div>
         <div className="flex items-center justify-center gap-4 mb-4">
           <h3 className="text-3xl font-bold text-gray-800">{title}</h3>
-          <button
+          {/* <button
             onClick={() => setShowAddForms({ ...showAddForms, [category]: true })}
             className="p-2 bg-blue-100 text-blue-600 rounded-full hover:bg-blue-200 transition-colors"
           >
             <Plus size={20} />
-          </button>
+          </button> */}
         </div>
         <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
       </div>
@@ -136,12 +136,12 @@ const Skills: React.FC = () => {
         >
           <div className="flex items-center justify-between mb-4">
             <h4 className="text-lg font-bold text-gray-800">Add New Skill</h4>
-            <button
+            {/* <button
               onClick={() => setShowAddForms({ ...showAddForms, [category]: false })}
               className="p-1 hover:bg-gray-200 rounded-full"
             >
               <X size={16} />
-            </button>
+            </button> */}
           </div>
           <div className="space-y-4">
             <input
@@ -182,12 +182,12 @@ const Skills: React.FC = () => {
                 className="w-full h-10 border rounded-lg"
               />
             </div>
-            <button
+            {/* <button
               onClick={() => addSkill(category)}
               className="w-full px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
             >
               Add Skill
-            </button>
+            </button> */}
           </div>
         </motion.div>
       )}
