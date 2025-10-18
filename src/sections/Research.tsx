@@ -32,6 +32,15 @@ const Research: React.FC = () => {
       journal: "IJSREM",
       coAuthors: ["Prof. S.K.Mahajan","Rutuja Dorkar","Jayesh Jadhav","Shweta Ahire"]
     },
+    {
+      id: 3,
+  title: "EcoSwap: Bridging Users and Charitable Trusts through Intelligent Item Exchange and Donation Management",
+  description: "Published in IJSREM, this research introduces EcoSwap, a community-driven platform that connects users and charitable trusts through intelligent item exchange and donation management. It integrates AI-based demand prediction, geofencing, and secure trust frameworks to promote sustainability, transparency, and social impact.",
+  link: "https://ijsrem.com/download/ecoswap-bridging-users-and-charitable-trusts-through-intelligent-item-exchange-and-donation-management/",
+  date: "2025-10-15",
+  journal: "IJSREM",
+  coAuthors: ["Prof. T.B. Faruki", "Janhavi Thoke", "Rutik Yadav", "Magdum Layakali Pirjade"]
+    },
 
   ]);
   const [showAddForm, setShowAddForm] = React.useState(false);
