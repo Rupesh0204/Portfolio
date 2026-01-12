@@ -49,7 +49,7 @@ const Projects: React.FC = () => {
       summary: "Led a 4-member team to build a high-complexity mobile app for real-time tracking, file sharing, and collaboration, improving project management, used by college staff, and winning two inter-college innovation awards.",
       skills: ["Android", "Firebase", "Material-UI", " Kotlin"],
       githubUrl: "https://github.com/Rupesh0204/Opacity-Social.git",
-      image: "/img-opa.png",
+      image: "/img-opa.PNG",
       screenshots: [
         "/img100.PNG",
         "/img101.PNG",
