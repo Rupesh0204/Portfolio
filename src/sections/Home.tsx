@@ -22,7 +22,7 @@ const Home: React.FC = () => {
     // Replace with your actual resume file path
     const link = document.createElement('a');
     link.href = '/resume.pdf'; // Place your resume.pdf in the public folder
-    link.download = 'Resume.pdf';
+    link.download = 'resume.pdf';
     link.click();
   };
 
