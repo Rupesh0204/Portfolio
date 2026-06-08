@@ -17,8 +17,74 @@ const Projects: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [projects, setProjects] = useState<Project[]>([
-    {
+     {
       id: 1,
+      title: "EcoSwap- Local Sustainable Item Exchange and Charity Platform",
+      summary: "Built a full-stack sustainability platform with 500+ users for free item exchange, donations, and reusable goods sharing. Features an AI-based item recommendation system (Python/ML) improving match accuracy by 40%, user trust scores with fraud detection increasing reliable exchanges by 35%, and an AI-powered admin dashboard managing 1,000+ listings with BI insights.",
+      skills: ["React", "Node.js", "Express.js", "Firebase", "Python", "Machine Learning"],
+      githubUrl: "https://github.com/ecoswap-platform/EcoSwap.git",
+      image: "ECOMAIN.png",
+      screenshots: [
+      "/ECO1.png",
+      "/ECO2.png",
+      "/ECO3.png",
+      "/ECO4.png",
+      "/ECO5.png",
+      "/ECO6.png",
+      "/ECO7.png",
+      "/ECO8.png",
+      "/ECO9.png",
+      "/ECO10.png",
+      "/ECO11.png",
+      "/ECO12.png",
+      "/ECO13.png",
+      "/ECO14.png",
+      "/ECO15.png",
+      "/ECO16.png",
+      "/ECO17.png",
+      "/ECO18.png",
+      "/ECO19.png",
+      "/ECO20.png",
+      "/ECO21.png",
+      "/ECO22.png",
+      "/ECO23.png",
+      "/ECO24.png",
+      "/ECO25.png",
+      "/ECO26.png",
+      "/ECO27.png",
+      "/ECO28.png",
+      "/ECO29.png",
+      "/ECO30.png",
+      "/ECO31.png",
+      "/ECO32.png",
+      "/ECO33.png",
+      "/ECO34.png",
+      "/ECO35.png",
+      "/ECO36.png",
+      "/ECO37.png",
+      "/ECO38.png",
+      "/ECO39.png",
+      "/ECO40.png",
+      "/ECO41.png",
+      "/ECO42.png",
+      "/ECO43.png",
+      ],
+      liveUrl: "https://eco-swap-flax.vercel.app/items"
+    },
+    {
+      id: 2,
+      title: "ResearchCopilot Pro — AI Research Intelligence Platform",
+      summary: "Building an AI-powered SaaS research platform integrating arXiv and Semantic Scholar APIs with RAG pipelines and vector embeddings for paper analysis, clustering, and research gap detection. Includes multi-paper literature review generation with DOCX/LaTeX/BibTeX export, RBAC with Supabase RLS, and Stripe-based subscription management for Free, Pro, and Team plans.",
+      skills: ["Next.js 14", "FastAPI", "Anthropic API", "Supabase", "PostgreSQL", "Stripe"],
+      githubUrl: "https://github.com/Rupesh0204/Research-Analyzer.git",
+      image: "/RCP.png",
+      screenshots: [
+      "/public/Research-Copilot-Pro.png",
+      ],
+      //liveUrl: "https://your-weather-demo.com"
+    },
+    {
+      id: 3,
       title: "E-Buy",
       summary: "Built a secure e-commerce platform with payment integration, OTP authentication, real-time delivery tracking, and a seller dashboard, delivered on time, earning client trust and referrals.",
       skills: ["React", "Node.js", "MongoDB", "Stripe", "TailwindCSS", "MERN stack"],
@@ -44,7 +110,7 @@ const Projects: React.FC = () => {
       //liveUrl: "https://your-ecommerce-demo.com"
     },
     {
-      id: 2,
+      id: 4,
       title: "Opacity Social",
       summary: "Led a 4-member team to build a high-complexity mobile app for real-time tracking, file sharing, and collaboration, improving project management, used by college staff, and winning two inter-college innovation awards.",
       skills: ["Android", "Firebase", "Material-UI", " Kotlin"],
@@ -70,7 +136,7 @@ const Projects: React.FC = () => {
       ],
     },
     {
-      id: 3,
+      id: 5,
       title: "OneShot AI",
       summary: "Developed a versatile AI chatbot integrating OpenAI API for code debugging, summary creation, image generation, and general Q&A, with secure key handling and a unified UI.",
       skills: ["Vue.js", "ReactJs", "OpenAI API", "Nodejs","Nextjs"],
@@ -90,7 +156,17 @@ const Projects: React.FC = () => {
                 "/img210.png",
       ],
       //liveUrl: "https://your-weather-demo.com"
-    }
+    },
+    {
+  id: 6,
+  title: "More Projects",
+  summary: "Explore all my other projects, experiments, and open-source contributions on GitHub.",
+  skills: [], // or add something like ["Open Source", "GitHub"]
+  githubUrl: "https://github.com/Rupesh0204", // your GitHub profile
+  image: "/gitrepo.png", // a cover image (suggestions below)
+  //isExternalRedirect: true, // custom flag — clicking opens githubUrl directly
+  screenshots: ["/gitrepo.png"],
+  }
   ]);
   const [showAddForm, setShowAddForm] = useState(false);
   const [newProject, setNewProject] = useState({

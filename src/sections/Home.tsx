@@ -82,7 +82,7 @@ const Home: React.FC = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
               >
-                Full Stack Web/App Developer & Cloud/DevOps Enthusiast
+                Full Stack Developer & Cloud Enthusiast
               </motion.p>
             </div>
 

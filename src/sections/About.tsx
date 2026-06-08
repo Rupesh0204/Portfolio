@@ -158,8 +158,8 @@ const About: React.FC = () => {
           <h2 className="text-4xl font-bold text-gray-800 mb-6">About Me</h2>
           <div className="max-w-4xl mx-auto text-lg text-gray-600 leading-relaxed space-y-4">
             <p>
-              I am Rupesh Bhadane, a passionate Full-Stack Web and App Developer
-              with a strong interest in Cloud and DevOps technologies.
+              I am Rupesh Bhadane, a passionate Full-Stack Developer
+              with a strong interest in Cloud technologies.
             </p>
             <p>
               My journey in technology began with a curiosity about how things
