@@ -79,7 +79,7 @@ const Projects: React.FC = () => {
       githubUrl: "https://github.com/Rupesh0204/Research-Analyzer.git",
       image: "/RCP.png",
       screenshots: [
-      "/public/Research-Copilot-Pro.png",
+      "/Research-Copilot-Pro.png",
       ],
       //liveUrl: "https://your-weather-demo.com"
     },
