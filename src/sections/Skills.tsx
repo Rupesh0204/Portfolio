@@ -18,9 +18,9 @@ const Skills: React.FC = () => {
       { name: 'Python', percentage: 70, color: '#3776AB' },
       { name: 'Java', percentage: 85, color: '#ED8B00' },
       { name: 'C++', percentage: 70, color: '#00599C' },
-      { name: 'C', percentage: 70, color: '#5ff71e' },
-      { name: 'C#', percentage: 50, color: '#2acb8097' },
-      { name: 'Kotlin', percentage: 60, color: '#f71eb6' },
+      // { name: 'C', percentage: 70, color: '#5ff71e' },
+      // { name: 'C#', percentage: 50, color: '#2acb8097' },
+      // { name: 'Kotlin', percentage: 60, color: '#f71eb6' },
     ],
     libraries: [
       { name: 'React', percentage: 95, color: '#61DAFB' },
