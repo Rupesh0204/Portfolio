@@ -81,7 +81,7 @@ const Projects: React.FC = () => {
       screenshots: [
       "/Research-Copilot-Pro.png",
       ],
-      //liveUrl: "https://your-weather-demo.com"
+     liveUrl: "https://research-copilot-beryl.vercel.app/"
     },
     {
       id: 3,
