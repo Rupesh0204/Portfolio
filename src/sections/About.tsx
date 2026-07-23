@@ -24,7 +24,7 @@ const About: React.FC = () => {
       title: 'Bachelor of Computer Engineering',
       institution: 'Sinhagad Academy of Engineering, Pune ( Under Savirtribai Phule Pune University)',
       period: '2023 - 2026',
-      description: 'Attending SAE as Direct Second year Student After 3 years of Diploma',
+      description: 'Attended SAE as Direct Second year Student After 3 years of Diploma',
     },
   ]);
 
