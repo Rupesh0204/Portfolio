@@ -8,7 +8,7 @@ interface CardData {
   institution: string;
   period: string;
   description: string;
-  Percenage?: string;
+  //Percenage?: string;
   CGPA?: string;
 }
 
@@ -20,7 +20,7 @@ const About: React.FC = () => {
       institution: 'K. K. Wagh Polytechnic, Nashik (under MSBTE)',
       period: '2020 - 2023',
       description: 'Attended Diploma in Computer Technology right after SSC 10th, To gain basics of Computer Technology',
-      Percenage: '85.60%',
+      CGPA: '85.60%',
     },
      {
       id: 2,
@@ -101,13 +101,13 @@ const About: React.FC = () => {
     }
   };
 
-  const removeEducation = (id: number) => {
-    setEducationData(educationData.filter((item) => item.id !== id));
-  };
+  // const removeEducation = (id: number) => {
+  //   setEducationData(educationData.filter((item) => item.id !== id));
+  // };
 
-  const removeInternship = (id: number) => {
-    setInternshipData(internshipData.filter((item) => item.id !== id));
-  };
+  // const removeInternship = (id: number) => {
+  //   setInternshipData(internshipData.filter((item) => item.id !== id));
+  // };
 
   const CardForm = ({ data, setData, onAdd, onCancel, type }: any) => (
     <div className="bg-gray-50 p-6 rounded-lg border-2 border-dashed border-gray-300">
@@ -137,6 +137,12 @@ const About: React.FC = () => {
           placeholder="Description"
           value={data.description}
           onChange={(e) => setData({ ...data, description: e.target.value })}
+          className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent h-24 resize-none"
+        />
+        <textarea
+          placeholder="CGPA"
+          value={data.CGPA}
+          onChange={(e) => setData({ ...data, CGPA: e.target.value })}
           className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent h-24 resize-none"
         />
         <div className="flex gap-3">
