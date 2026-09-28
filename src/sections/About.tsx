@@ -8,6 +8,8 @@ interface CardData {
   institution: string;
   period: string;
   description: string;
+  Percenage?: string;
+  CGPA?: string;
 }
 
 const About: React.FC = () => {
@@ -18,6 +20,7 @@ const About: React.FC = () => {
       institution: 'K. K. Wagh Polytechnic, Nashik (under MSBTE)',
       period: '2020 - 2023',
       description: 'Attended Diploma in Computer Technology right after SSC 10th, To gain basics of Computer Technology',
+      Percenage: '85.60%',
     },
      {
       id: 2,
@@ -25,23 +28,32 @@ const About: React.FC = () => {
       institution: 'Sinhagad Academy of Engineering, Pune ( Under Savirtribai Phule Pune University)',
       period: '2023 - 2026',
       description: 'Attended SAE as Direct Second year Student After 3 years of Diploma',
+      CGPA: '8.28',
     },
   ]);
 
   const [internshipData, setInternshipData] = useState<CardData[]>([
     {
       id: 1,
-      title: 'Software Development Intern',
-      institution: 'Sachitech Technologies',
-      period: 'Winter 2022',
-      description: 'Developed web applications',
+      title: 'FullStack Developer',
+      institution: 'Scribido Campus',
+      period: ' Aug 2026 - current',
+      description: 'inhouse Product Development and Maintenance of Scribido Campus',
     },
-     {
+    {
       id: 2,
       title: 'FullStack Development Intern',
       institution: 'Xmega',
       period: 'Summer 2025',
       description: 'worked on Clients buisness project',
+    },
+     {
+      id: 3,
+      title: 'Software Development Intern',
+      institution: 'Sachitech Technologies',
+      period: 'Winter 2022',
+      description: 'Developed web applications',
+ 
     },
   ]);
 
