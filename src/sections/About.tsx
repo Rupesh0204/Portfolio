@@ -19,15 +19,18 @@ const About: React.FC = () => {
       title: 'Diploma in Computer Technology',
       institution: 'K. K. Wagh Polytechnic, Nashik (under MSBTE)',
       period: '2020 - 2023',
-      description: 'Attended Diploma in Computer Technology right after SSC 10th, To gain basics of Computer Technology',
+      description:
+        'Attended Diploma in Computer Technology right after SSC 10th, To gain basics of Computer Technology',
       CGPA: '85.60%',
     },
-     {
+    {
       id: 2,
       title: 'Bachelor of Computer Engineering',
-      institution: 'Sinhagad Academy of Engineering, Pune ( Under Savirtribai Phule Pune University)',
+      institution:
+        'Sinhagad Academy of Engineering, Pune ( Under Savirtribai Phule Pune University)',
       period: '2023 - 2026',
-      description: 'Attended SAE as Direct Second year Student After 3 years of Diploma',
+      description:
+        'Attended SAE as Direct Second year Student After 3 years of Diploma',
       CGPA: '8.28',
     },
   ]);
@@ -38,7 +41,8 @@ const About: React.FC = () => {
       title: 'FullStack Developer',
       institution: 'Scribido Campus',
       period: ' Aug 2026 - current',
-      description: 'inhouse Product Development and Maintenance of Scribido Campus',
+      description:
+        'inhouse Product Development and Maintenance of Scribido Campus',
     },
     {
       id: 2,
@@ -47,13 +51,12 @@ const About: React.FC = () => {
       period: 'Summer 2025',
       description: 'worked on Clients buisness project',
     },
-     {
+    {
       id: 3,
       title: 'Software Development Intern',
       institution: 'Sachitech Technologies',
       period: 'Winter 2022',
       description: 'Developed web applications',
- 
     },
   ]);
 
@@ -62,25 +65,34 @@ const About: React.FC = () => {
     institution: '',
     period: '',
     description: '',
+    CGPA: '',
   });
+
   const [newInternship, setNewInternship] = useState({
     title: '',
     institution: '',
     period: '',
     description: '',
   });
+
   const [showEducationForm, setShowEducationForm] = useState(false);
   const [showInternshipForm, setShowInternshipForm] = useState(false);
 
   const addEducation = () => {
     if (newEducation.title && newEducation.institution) {
-      setEducationData([...educationData, { id: Date.now(), ...newEducation }]);
+      setEducationData([
+        ...educationData,
+        { id: Date.now(), ...newEducation },
+      ]);
+
       setNewEducation({
         title: '',
         institution: '',
         period: '',
         description: '',
+        CGPA: '',
       });
+
       setShowEducationForm(false);
     }
   };
@@ -91,12 +103,14 @@ const About: React.FC = () => {
         ...internshipData,
         { id: Date.now(), ...newInternship },
       ]);
+
       setNewInternship({
         title: '',
         institution: '',
         period: '',
         description: '',
       });
+
       setShowInternshipForm(false);
     }
   };
@@ -116,35 +130,51 @@ const About: React.FC = () => {
           type="text"
           placeholder="Title"
           value={data.title}
-          onChange={(e) => setData({ ...data, title: e.target.value })}
+          onChange={(e) =>
+            setData({ ...data, title: e.target.value })
+          }
           className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
         />
+
         <input
           type="text"
           placeholder="Institution/Company"
           value={data.institution}
-          onChange={(e) => setData({ ...data, institution: e.target.value })}
+          onChange={(e) =>
+            setData({ ...data, institution: e.target.value })
+          }
           className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
         />
+
         <input
           type="text"
           placeholder="Period"
           value={data.period}
-          onChange={(e) => setData({ ...data, period: e.target.value })}
+          onChange={(e) =>
+            setData({ ...data, period: e.target.value })
+          }
           className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
         />
+
         <textarea
           placeholder="Description"
           value={data.description}
-          onChange={(e) => setData({ ...data, description: e.target.value })}
+          onChange={(e) =>
+            setData({ ...data, description: e.target.value })
+          }
           className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent h-24 resize-none"
         />
-        <textarea
-          placeholder="CGPA"
+
+        <input
+          type="text"
+          placeholder="CGPA / Percentage"
           value={data.CGPA}
-          onChange={(e) => setData({ ...data, CGPA: e.target.value })}
-          className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent h-24 resize-none"
+          onChange={(e) =>
+            setData({ ...data, CGPA: e.target.value })
+          }
+          className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
         />
+
         <div className="flex gap-3">
           <button
             onClick={onAdd}
@@ -152,6 +182,7 @@ const About: React.FC = () => {
           >
             Add {type}
           </button>
+
           <button
             onClick={onCancel}
             className="px-4 py-2 bg-gray-300 text-gray-700 rounded-lg hover:bg-gray-400 transition-colors"
@@ -166,6 +197,8 @@ const About: React.FC = () => {
   return (
     <section id="about" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        {/* About Me */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -173,22 +206,28 @@ const About: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-gray-800 mb-6">About Me</h2>
+          <h2 className="text-4xl font-bold text-gray-800 mb-6">
+            About Me
+          </h2>
+
           <div className="max-w-4xl mx-auto text-lg text-gray-600 leading-relaxed space-y-4">
             <p>
               I am Rupesh Bhadane, a passionate Full-Stack Developer
               with a strong interest in Cloud technologies.
             </p>
+
             <p>
               My journey in technology began with a curiosity about how things
               work, which led me to pursue computer science and dive deep into
               various programming languages and frameworks.
             </p>
+
             <p>
               I believe in continuous learning and staying updated with the
               latest technologies to create innovative solutions that make a
               difference.
             </p>
+
             <p>
               When I'm not coding, you can find me contributing to open-source
               projects, writing technical blogs, or exploring new technologies
@@ -198,6 +237,7 @@ const About: React.FC = () => {
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12">
+
           {/* Education Section */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -207,9 +247,14 @@ const About: React.FC = () => {
           >
             <div className="flex items-center justify-between mb-8">
               <h3 className="text-2xl font-bold text-gray-800 flex items-center">
-                <GraduationCap className="mr-3 text-blue-600" size={28} />
+                <GraduationCap
+                  className="mr-3 text-blue-600"
+                  size={28}
+                />
                 Education
               </h3>
+
+              {/* Add Education Button */}
               {/* <button
                 onClick={() => setShowEducationForm(true)}
                 className="p-2 bg-blue-100 text-blue-600 rounded-full hover:bg-blue-200 transition-colors"
@@ -227,20 +272,36 @@ const About: React.FC = () => {
                   transition={{ duration: 0.5 }}
                   className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-lg shadow-lg border-l-4 border-blue-500 group hover:shadow-xl transition-shadow relative"
                 >
+                  {/* Remove Education Button */}
                   {/* <button
                     onClick={() => removeEducation(item.id)}
                     className="absolute top-4 right-4 p-1 text-gray-400 hover:text-red-500 opacity-0 group-hover:opacity-100 transition-opacity"
                   >
                     <X size={16} />
                   </button> */}
+
                   <h4 className="text-xl font-semibold text-gray-800 mb-2">
                     {item.title}
                   </h4>
+
                   <p className="text-blue-600 font-medium mb-1">
                     {item.institution}
                   </p>
-                  <p className="text-gray-500 text-sm mb-3">{item.period}</p>
-                  <p className="text-gray-600">{item.description}</p>
+
+                  <p className="text-gray-500 text-sm mb-2">
+                    {item.period}
+                  </p>
+
+                  <p className="text-gray-600 mb-2">
+                    {item.description}
+                  </p>
+
+                  {/* CGPA / Percentage */}
+                  {item.CGPA && (
+                    <p className="text-gray-800 font-semibold">
+                      CGPA / Percentage: {item.CGPA}
+                    </p>
+                  )}
                 </motion.div>
               ))}
 
@@ -256,7 +317,7 @@ const About: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* Internship Section */}
+          {/* Internship / Experience Section */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -265,9 +326,14 @@ const About: React.FC = () => {
           >
             <div className="flex items-center justify-between mb-8">
               <h3 className="text-2xl font-bold text-gray-800 flex items-center">
-                <Briefcase className="mr-3 text-purple-600" size={28} />
+                <Briefcase
+                  className="mr-3 text-purple-600"
+                  size={28}
+                />
                 Experience
               </h3>
+
+              {/* Add Experience Button */}
               {/* <button
                 onClick={() => setShowInternshipForm(true)}
                 className="p-2 bg-purple-100 text-purple-600 rounded-full hover:bg-purple-200 transition-colors"
@@ -285,20 +351,29 @@ const About: React.FC = () => {
                   transition={{ duration: 0.5 }}
                   className="bg-gradient-to-br from-purple-50 to-pink-50 p-6 rounded-lg shadow-lg border-l-4 border-purple-500 group hover:shadow-xl transition-shadow relative"
                 >
+                  {/* Remove Experience Button */}
                   {/* <button
                     onClick={() => removeInternship(item.id)}
                     className="absolute top-4 right-4 p-1 text-gray-400 hover:text-red-500 opacity-0 group-hover:opacity-100 transition-opacity"
                   >
                     <X size={16} />
                   </button> */}
+
                   <h4 className="text-xl font-semibold text-gray-800 mb-2">
                     {item.title}
                   </h4>
+
                   <p className="text-purple-600 font-medium mb-1">
                     {item.institution}
                   </p>
-                  <p className="text-gray-500 text-sm mb-3">{item.period}</p>
-                  <p className="text-gray-600">{item.description}</p>
+
+                  <p className="text-gray-500 text-sm mb-3">
+                    {item.period}
+                  </p>
+
+                  <p className="text-gray-600">
+                    {item.description}
+                  </p>
                 </motion.div>
               ))}
 
@@ -313,6 +388,7 @@ const About: React.FC = () => {
               )}
             </div>
           </motion.div>
+
         </div>
       </div>
     </section>
