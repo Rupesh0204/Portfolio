@@ -16,7 +16,7 @@ const Research: React.FC = () => {
   const [researchPapers, setResearchPapers] = React.useState<ResearchPaper[]>([
     {
       id: 1,
-      title: "Al As A Collaborative Tool: Enhancing Workplace Efficiency Without Replacing Human Jobs",
+      title: "AI As A Collaborative Tool: Enhancing Workplace Efficiency Without Replacing Human Jobs",
       description: "Explored AI as a collaborative tool to enhance workplace efficiency by augmenting human capabilities, streamlining tasks, and promoting ethical human-AI collaboration.",
       link: "https://ijsrem.com/download/ai-as-a-collaborative-tool-enhancing-workplace-efficiency-without-replacing-human-jobs/",
       date: "2025-04-20",

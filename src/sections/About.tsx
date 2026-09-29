@@ -25,9 +25,9 @@ const About: React.FC = () => {
     },
     {
       id: 2,
-      title: 'Bachelor of Computer Engineering',
+      title: 'Bachelor of Engineering (Computer Engineering)',
       institution:
-        'Sinhagad Academy of Engineering, Pune ( Under Savirtribai Phule Pune University)',
+        'Sinhagad Academy of Engineering, Pune ( under Savitribai Phule Pune University)',
       period: '2023 - 2026',
       description:
         'Attended SAE as Direct Second year Student After 3 years of Diploma',
@@ -40,16 +40,16 @@ const About: React.FC = () => {
       id: 1,
       title: 'FullStack Developer',
       institution: 'Scribido Campus',
-      period: ' Aug 2026 - current',
+      period: ' Aug 2026 - Present',
       description:
-        'inhouse Product Development and Maintenance of Scribido Campus',
+        'In-house Product Development and Maintenance of Scribido Campus',
     },
     {
       id: 2,
       title: 'FullStack Development Intern',
       institution: 'Xmega',
       period: 'Summer 2025',
-      description: 'worked on Clients buisness project',
+      description: 'Worked on clients business projects',
     },
     {
       id: 3,

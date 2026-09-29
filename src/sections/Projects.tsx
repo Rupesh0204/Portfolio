@@ -19,7 +19,7 @@ const Projects: React.FC = () => {
   const [projects, setProjects] = useState<Project[]>([
      {
       id: 1,
-      title: "EcoSwap- Local Sustainable Item Exchange and Charity Platform",
+      title: "EcoSwap : Local Sustainable Item Exchange and Charity Platform",
       summary: "Built a full-stack sustainability platform with 500+ users for free item exchange, donations, and reusable goods sharing. Features an AI-based item recommendation system (Python/ML) improving match accuracy by 40%, user trust scores with fraud detection increasing reliable exchanges by 35%, and an AI-powered admin dashboard managing 1,000+ listings with BI insights.",
       skills: ["React", "Node.js", "Express.js", "Firebase", "Python", "Machine Learning"],
       githubUrl: "https://github.com/ecoswap-platform/EcoSwap.git",
