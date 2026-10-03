@@ -40,7 +40,7 @@ const About: React.FC = () => {
       id: 1,
       title: 'FullStack Developer',
       institution: 'Scribido Campus',
-      period: ' Aug 2026 - Present',
+      period: ' Aug 2026 - Oct 2026',
       description:
         'In-house Product Development and Maintenance of Scribido Campus',
     },
